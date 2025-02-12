@@ -12,7 +12,7 @@
       margin: 0;
       padding: 0;
     }
-    
+
     h1 {
       color: #2d3e50;
       margin-top: 50px;
@@ -31,48 +31,58 @@
       text-align: left;
     }
 
-ul {
-  display: flex;
-  justify-content: center;
-  padding: 0;
-}
+    .report-container {
+      text-align: center;
+      margin-top: 30px;
+    }
 
-li {
-  margin: 10px;
-}
+    .report-link {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin: 10px;
+    }
 
-a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
+    .report-link:hover {
+      background-color: #0056b3;
+    }
 
-a:hover {
-  background-color: #0056b3;
-}
-
-    a:active {
+    .report-link:active {
       background-color: #003f7f;
     }
 
-    a:focus {
+    .report-link:focus {
       outline: none;
+    }
+
+    .report-description {
+      max-width: 800px;
+      margin: 10px auto;
+      font-size: 1.1em;
+      text-align: left;
     }
   </style>
 </head>
 <body>
   <h1>Performance Reports</h1>
 
-  <!-- Доданий текст пояснення -->
-<p> These performance reports reflect the testing results for different thread configurations for two different versions of the WMS application. The tests measure the performance impact of running 20, 50, and 100 threads simultaneously. Each report contains details on system performance, including response times, throughput, and other relevant metrics. </p>
-<p>The tests were conducted to measure response times for entity lists, such as containers, devices, alerts, and others, using partial filtering to simulate real-world platform usage scenarios.  </p>
-<p>Choose one of the reports below to view the detailed results for each configuration. </p>
-  
-<li><a href="./vehicles_lists_20_thr/index.html">20 Threads Report</a></li>
-    <p> Vehicles list, Short Vehicles list for the map, Vehicles list for the tab on the map, Vehicles statuses filter for the map</p>
+  <p>These performance reports reflect the testing results for different thread configurations for two different versions of the WMS application. The tests measure the performance impact of running 20, 50, and 100 threads simultaneously. Each report contains details on system performance, including response times, throughput, and other relevant metrics.</p>
+
+  <p>The tests were conducted to measure response times for entity lists, such as containers, devices, alerts, and others, using partial filtering to simulate real-world platform usage scenarios.</p>
+
+  <p>Choose one of the reports below to view the detailed results for each configuration.</p>
+
+  <div class="report-container">
+    <a href="./vehicles_lists_20_thr/index.html" class="report-link">20 Threads Report</a>
+  </div>
+
+  <p class="report-description">
+    Vehicles list, Short Vehicles list for the map, Vehicles list for the tab on the map, Vehicles statuses filter for the map.
+  </p>
+
 </body>
 </html>
