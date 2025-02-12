@@ -71,15 +71,23 @@
   <h1>Performance Reports</h1>
 
   <p>These performance reports reflect the testing results for different thread configurations for two different versions of the WMS application. The tests measure the performance impact of running 20, 50, and 100 threads simultaneously. Each report contains details on system performance, including response times, throughput, and other relevant metrics.</p>
-
+<p>Each endpoint was checked as a full list with a random page size and page number, separate checks were provided for filtration by a random combination of region+city+department, random contractor filtration, and random search text query. </p>
   <p>Choose one of the reports below to view the detailed results for each configuration.</p>
 
   <div class="report-container">
-    <a href="./vehicles_lists_20_thr/index.html" class="report-link">20 Threads Report</a>
+    <a href="./vehicles_lists_20_thr_v2/index.html" class="report-link">Vehicles 20 Threads Report</a>
   </div>
 
   <p class="report-description">
-    Vehicles list, Short Vehicles list for the map, Vehicles list for the tab on the map, Vehicles statuses filter for the map.
+    Vehicles list, Short Vehicles list for the map, Vehicles list for the tab on the map, and Vehicles statuses filter for the map.
+  </p>
+
+    <div class="report-container">
+    <a href="./geofences_pois_lists_20_thr/index.html" class="report-link">Geofences 20 Threads Report</a>
+  </div>
+
+  <p class="report-description">
+    Geofences list for the tab on the map, Short Geofences list for the map, POIs list for the tab on the map, Short POIs list for the map.
   </p>
 
 </body>
