@@ -10,12 +10,12 @@
       background-color: #f4f4f9;
       color: #333;
       margin: 0;
-      padding: 0;
+      padding: 20px;
     }
 
     h1 {
       color: #2d3e50;
-      margin-top: 50px;
+      margin-top: 20px;
       font-size: 2.5em;
       text-align: center;
     }
@@ -24,11 +24,8 @@
       font-size: 1.2em;
       line-height: 1.6;
       margin-top: 20px;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
       color: #555;
-      text-align: left;
+      text-align: justify;
     }
 
     .report-container {
@@ -39,7 +36,7 @@
     .report-button {
       display: inline-block;
       padding: 15px 30px;
-      font-size: 18px;
+      font-size: 20px;
       background-color: #007bff;
       color: white;
       border: none;
@@ -64,7 +61,7 @@
       font-size: 16px;
       color: #555;
       text-align: left;
-      max-width: 500px;
+      max-width: 70%;
       margin-left: auto;
       margin-right: auto;
     }
@@ -79,13 +76,15 @@
 <body>
   <h1>Performance Reports</h1>
 
-  <p>These performance reports reflect the testing results for different thread configurations for two different versions of the WMS application. The tests measure the performance impact of running 20 threads simultaneously. Each report contains details on system performance, including response times, throughput, and other relevant metrics.</p>
+  <p>These performance reports reflect the testing results for different thread configurations for two different versions of the WMS application. The tests measure the performance impact of running 20, 50, and 100 threads simultaneously. Each report contains details on system performance, including response times, throughput, and other relevant metrics.</p>
+
   <p>Each endpoint was checked as a full list with a random page size and page number, separate checks were provided for filtration by a random combination of region+city+department, random contractor filtration, and random search text query.</p>
+
   <p>Choose one of the reports below to view the detailed results for each configuration.</p>
 
   <div class="report-container">
     <button class="report-button" onclick="location.href='./vehicles_lists_20_thr_v2/index.html'">
-      Vehicles 20 Threads Report (before optimization)
+      Vehicles 20 Threads Report
     </button>
     <div class="report-description">
       <strong>Includes:</strong>
@@ -100,7 +99,7 @@
 
   <div class="report-container">
     <button class="report-button" onclick="location.href='./geofences_pois_lists_20_thr/index.html'">
-      Geofences 20 Threads Report (before optimization)
+      Geofences 20 Threads Report
     </button>
     <div class="report-description">
       <strong>Includes:</strong>
