@@ -1,0 +1,34 @@
+{
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 50000,
+    "errorCount" : 43826,
+    "errorPct" : 87.652,
+    "meanResTime" : 3328.62985999997,
+    "medianResTime" : 82.0,
+    "minResTime" : 19.0,
+    "maxResTime" : 9600.0,
+    "pct1ResTime" : 6239.0,
+    "pct2ResTime" : 6352.0,
+    "pct3ResTime" : 6429.0,
+    "throughput" : 401.5741707493374,
+    "receivedKBytesPerSec" : 381.91128755973415,
+    "sentKBytesPerSec" : 238.1330754055899
+  },
+  "Send Telemetry" : {
+    "transaction" : "Send Telemetry",
+    "sampleCount" : 50000,
+    "errorCount" : 43826,
+    "errorPct" : 87.652,
+    "meanResTime" : 3328.62985999997,
+    "medianResTime" : 82.0,
+    "minResTime" : 19.0,
+    "maxResTime" : 9600.0,
+    "pct1ResTime" : 6239.0,
+    "pct2ResTime" : 6352.0,
+    "pct3ResTime" : 6429.0,
+    "throughput" : 401.5741707493374,
+    "receivedKBytesPerSec" : 381.91128755973415,
+    "sentKBytesPerSec" : 238.1330754055899
+  }
+}
